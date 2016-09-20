@@ -1,0 +1,45 @@
+* {
+  font-family: 'Prompt', sans-serif;
+}
+.container-twitter{
+	background-color: #e0f2f1;
+	border: 1px solid #80deea;
+	margin: 0 auto;
+	padding: 10px;
+	width: 500px;	
+}
+.image-twitter{
+	background-image: url("../img/img-twitter1.jpg");
+	background-size: cover;
+    background-position: center;
+	border: 1px solid #80deea;
+	border-radius: 5px;
+	height: 30px;
+	position: absolute;
+	width: 30px;	
+}
+img{
+	width: 30px;
+	height: 30px;
+}
+.form-signup{
+    position: relative;
+    left: 40px;
+}
+textarea{
+	border: 1px solid #80deea;
+	width: 450px;
+	margin-bottom: 10px;
+}
+button{
+	background-color: #b2ebf2;
+	border: 1px solid #80deea;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+    font-weight: 500;
+    height: 30px;
+    left: 350px;
+    position: relative;
+	width: 100px;
+}
