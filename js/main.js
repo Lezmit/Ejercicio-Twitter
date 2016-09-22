@@ -17,13 +17,27 @@ window.addEventListener("load",function(){
 
 	anclaTexto.addEventListener("keyup",function(){
 		boton.disabled=false;  
-		var longitudCaracteres = anclaTexto.value.length;
+		var longitudCaracteres = anclaTexto.value.length;	
 		if(longitudCaracteres<=caracter){
 			contadorTexto.innerHTML=caracter-longitudCaracteres;
+			if(longitudCaracteres<120){
+				document.getElementById("contador-caracteres").style.color="#bdbdbd";
+			}
+			else if(longitudCaracteres>=120 && longitudCaracteres<130 ){
+				document.getElementById("contador-caracteres").style.color="black";
+			}
+			else if(longitudCaracteres>=130 && longitudCaracteres<140){
+				document.getElementById("contador-caracteres").style.color="#ff6e40";
+			}
 		}
 		else{
 			contadorTexto.innerHTML=caracter-longitudCaracteres;
+			
+			if(longitudCaracteres >140){
+				boton.disabled=true;
+				document.getElementById("contador-caracteres").style.color="red";
+			}
+
 		}
 	});
-		
 });
