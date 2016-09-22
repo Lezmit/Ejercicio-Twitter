@@ -9,6 +9,7 @@ window.addEventListener("load",function(){
 		textTwuiter=anclaTexto.value;
 		var nuevoAncla = document.createElement("div");
 		nuevoAncla.innerHTML=textTwuiter;
+		nuevoAncla.classList.add("style-twuit");
 		var resultado= document.getElementById("resultado");
 		resultado.insertBefore(nuevoAncla,resultado.childNodes[0]);
 		boton.disabled=true;
@@ -37,7 +38,6 @@ window.addEventListener("load",function(){
 				boton.disabled=true;
 				document.getElementById("contador-caracteres").style.color="red";
 			}
-
 		}
 	});
 });
